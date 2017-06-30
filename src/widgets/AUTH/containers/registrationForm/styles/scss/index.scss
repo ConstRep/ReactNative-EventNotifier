@@ -1,0 +1,139 @@
+.SCSS_ROOT {
+  background-color: #E4E9EF;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .SCSS_LOGIN_FORM {
+    background-color: #fff;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .SCSS_HEADER {
+      height: 50px;
+      background-color: #333B45;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .SCSS_BODY {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .SCSS_USER_LOGO {
+        border: 4px solid #5A5A5A;
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        display: none;
+        animation: fadeIn 0.5s linear;
+      }
+
+      .SCSS_INPUT {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3px;
+        animation: fadeIn 0.5s linear;
+
+        .SCSS_ICON_WRAP {
+          width: 40px;
+          height: 40px;
+          background-color: #E3E8EE;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .SCSS_ICON_PASSWORD {
+          animation: fadeIn 0.5s linear;
+        }
+
+        input {
+          background-color: #E3E8EE;
+          border: none;
+          margin-left: 3px;
+          padding: 10px;
+          width: 247px;
+          animation: fadeIn 0.5s linear;
+        }
+      }
+
+      .SCSS_CLIENT_ERROR {
+        padding: 20px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .SCSS_ICON_WRAP {
+          color: red;
+        }
+
+        .SCSS_MESSAGE {
+          margin-left: 10px;
+        }
+
+      }
+
+      .SCSS_BTN {
+        width: 100%;
+        margin-top: 10px;
+
+        input {
+          background-color: #27B9D3;
+          color: #fff;
+          text-transform: uppercase;
+          border: none;
+          padding: 10px;
+          width: 100%;
+          border-radius: 3px;
+
+          &[disabled] {
+            background-color: #E3E8EE !important;
+            cursor: not-allowed;
+          }
+
+          &:hover {
+            transition: 0.3s all ease-in-out;
+            background-color: #31708f;
+          }
+        }
+      }
+
+      .SCSS_SIGNUP {
+        margin-top: 20px;
+
+        a {
+          color: #333B45;
+
+          &:hover {
+            color: #31708f;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
